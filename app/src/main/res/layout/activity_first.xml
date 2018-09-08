@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/more_tools_button"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/seagreen"
+                android:backgroundTint="@color/seagreen"
+                android:elevation="24dp"
+                android:text="More tools"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="1000dp"
+                android:layout_height="375dp"
+
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/talia7" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/third_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/second_button"
+                android:layout_toEndOf="@+id/second_button"
+                android:layout_toRightOf="@+id/second_button"
+                android:clickable="true"
+
+                app:backgroundTint="@android:color/background_light"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_send" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/first_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginLeft="12dp"
+
+                android:layout_marginStart="12dp"
+
+
+                android:clickable="true"
+                app:backgroundTint="@color/lightcyan"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/heart_icon" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/second_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_toEndOf="@+id/first_button"
+                android:layout_toRightOf="@+id/first_button"
+                android:clickable="true"
+
+                app:backgroundTint="@android:color/background_light"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/take2" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/more_tools_button"
+                android:layout_alignLeft="@+id/first_button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/more_tools_button"
+                android:layout_alignStart="@+id/first_button"
+                android:layout_below="@+id/more_tools_button"
+                android:layout_marginTop="14dp"
+                android:text="taliatheswimmer_ 1) alert  2) urgent  3) call 911 #vigilant" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/third_button"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignRight="@+id/third_button"
+                android:layout_alignStart="@+id/textView29"
+                android:layout_alignTop="@+id/textView29"
+                android:text="taliatheswimmer_"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
